@@ -52,3 +52,31 @@ h1{
         4px 4px 30px rgba(210, 25, 16, 0.4),
         4px 4px 40px rgba(210, 15, 06, 0.4);
 }
+
+#time {
+        color: rgb(252, 150, 65);
+        z-index: 1;
+        font-size: 4vw;
+        -webkit-text-stroke: 3px rgb(79, 236, 6);
+        text-shadow: 4px 4px 10px rgba(7, 215, 252, 0.418),
+        4px 4px 20px rgba(7, 215, 252, 0.418),
+        4px 4px 30px rgba(7, 215, 252, 0.418),
+        4px 4px 40px rgba(7, 215, 252, 0.418);
+}
+
+h5 {
+            color: rgb(211, 245, 19);
+            z-index: 1;
+            font-size: 4vw;
+            -webkit-text-stroke: 3px rgb(223, 9, 252);
+            text-shadow: 4px 4px 10px rgba(7, 81, 243, 0.521),
+            4px 4px 20px rgba(7, 81, 243, 0.521),
+            4px 4px 30px rgba(7, 81, 243, 0.521),
+            4px 4px 40px rgba(7, 81, 243, 0.521);
+}
+
+.gif {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
