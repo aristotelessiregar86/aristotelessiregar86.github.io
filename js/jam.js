@@ -31,6 +31,11 @@ $(document).ready(function(){
                     <h5 class="text-center">Selamat Hari Persatuan Artis Film Indonesia(PARFI)</h5>
                     <img class="gif" src="img/SelamatPAFRI.gif" alt="">
                     </div>`
+            } else if (tanggal == 11) {
+                document.querySelector('#selamat').innerHTML = `<div id="selamat2"><br><br><br><br><br><br><br><br><br>
+                    <h5 class="text-center">Selamat Hari Surat Perintah Sebelas Maret(SUPERSEMAR)</h5>
+                    <img class="gif" src="img/SelamatSUPERSEMAR.gif" alt="">
+                    </div>`
             }
 
             requestAnimationFrame(clock);
@@ -38,6 +43,8 @@ $(document).ready(function(){
 
         requestAnimationFrame(clock);
     });
+
+    
 
  
 
