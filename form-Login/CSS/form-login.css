@@ -1,0 +1,213 @@
+.kotak-kiri {
+    float: left;
+    width: 584px;
+    height: 900px;
+    background-color: #21206C;
+    color: white;
+}
+
+.kotak-kanan {
+    margin: auto 800px;
+    width: 584px;
+    height: 900px;
+    background-color: white;
+}
+
+.for,.for2 {
+    padding-left: 80px;
+    font-family: roboto;
+}
+
+.for2 {
+    font-family: roboto;
+    width: 425px;
+    height: 111.74px;
+    font-size: 29.77px;
+    text-allign: left;
+}
+
+.p1 {
+    font-family: roboto;
+    width: 263.02px;
+    height: 46.26px;
+    padding-left: 80px;
+    text-allign: left;
+    opacity: 0.5;
+}
+
+hr {
+    width: 33.32px;
+    height: 3.17px;
+    margin-left: 14%;
+    margin-right: -12%;
+    float: left;
+}
+.hr-2, 
+.hr-3 {
+    background-color: #FFFFFF;
+    opacity: 0.5;   
+    border-radius: 3px;
+}
+.hr-1 {
+    border-radius: 3px;
+    opacity: 0.9;
+    background-color: white;
+}
+
+.font-s {
+    padding-top: 50px;
+}
+
+.fa-facebook-f {
+    padding-left: 95px;
+    color: #FFFFFF;
+}
+
+.fa-twitter {
+    padding-left: 30px;
+    color: #FFFFFF;
+}
+.fa-linkedin-in {
+    padding-left: 30px;
+    color:#FFFFFF;
+}
+
+.a1,
+.a2,.a3 {
+    text-decoration: none;
+    float: left;
+}
+
+.pp {
+    padding-left: 80px;
+    padding-top: 380px;
+    color: white;
+    font-size: small;
+    font-family: roboto;
+}
+
+.cntc {
+    padding-left: 30px;
+    color: white;
+    padding-top: 380px;
+    font-size: small;
+    font-family: roboto;
+}
+
+.cr {
+    color: white;
+    padding-top: 380px;
+    padding-left: 30px;
+    font-size: small;
+    font-family: roboto;
+}
+
+.title2 {
+    font-family: roboto;
+    padding-top: 100px;
+}
+
+.sub2 {
+    font-family: roboto;
+}
+
+.username {
+    width: 476.96px;
+    height: 50.86px;
+    border-radius: 3.30px;
+    opacity: 0.5;
+    font-family: roboto;
+}
+
+.uname {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.email-address {
+    width: 476.96px;
+    height: 50.86px;
+    border-radius: 3.30px;
+    opacity: 0.5;
+    font-family: roboto;
+}
+
+.eaddress {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.password {
+    width: 476.96px;
+    height: 50.86px;
+    border-radius: 3.30px;
+    opacity: 0.5;
+    font-family: roboto;
+}
+
+.pssword {
+    font-family: roboto;
+    font-weight: bold;
+}
+
+.chck {
+    font-family: roboto;
+}
+
+.forgot {
+    font-family: roboto;
+    text-decoration: none;
+    color: #21206C;
+    padding-left: 160px;
+    font-weight: bold;
+}
+
+.forgot:hover {
+    color: skyblue;
+}
+
+.chckbox:hover {
+    cursor: pointer;
+}
+
+.btn-p {
+    width: 476.96px;
+    height: 50.86px;
+    padding-top: 20px;
+    border-radius: 3.30px;
+    background-color: #21206C;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: Roboto;
+    display: inline-block;
+}
+
+.btn-p:hover {
+    cursor: pointer;
+    background-color: rgb(0, 153, 255);
+}
+
+.btn-p2 {
+    width: 474px;
+    height: 40.86px;
+    border-radius: 3.30px;
+    background-color: white;
+    color: #757492;
+    border-style: outset;
+    display: inline-block;
+    text-align: center;
+    padding-top: 15px;
+    text-decoration: none;
+    font-family: roboto;
+}
+
+.btn-p2:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.btn-p2:active {
+    opacity: 0.5;
+}
