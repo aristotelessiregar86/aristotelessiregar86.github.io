@@ -1,0 +1,57 @@
+
+#MemberGroupInput,
+#MemberListInput {
+    border-style: solid;
+    border-color: #F05F40;
+}
+
+.form-label,
+.form-text,
+.h1 {
+    color: #4BBCF4;
+}
+
+p {
+    color: #61C0BF;
+    font-family: roboto;
+}
+
+.form-label,
+.form-text {
+    font-family: roboto;
+}
+
+.h1 {
+    font-weight: bold;
+}
+
+#SubmitButton {
+    background-color: #F05F40;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 5px 5px 0px #e7411b;
+}
+
+#SubmitButton:hover {
+    background-color: #FFB6B9;
+    border-color: #BBDED6;
+    box-shadow: 5px 5px 0px #f3a3a5;
+}
+
+#SubmitButton:active {
+    box-shadow: 0px 0px 0px #f3a3a5;
+    margin-top: 1px;
+}
+
+.footer {
+    color: black;
+    text-align: center;
+    
+
+}
+
+.op {
+    display: inline-block;
+    color: #E7CC8F;
+    text-decoration: none;
+}
