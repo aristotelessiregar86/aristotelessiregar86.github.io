@@ -50,3 +50,6 @@ button {
     opacity: 0;
 }
 
+#myBtn {
+    cursor: not-allowed;
+}
