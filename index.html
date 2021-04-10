@@ -42,8 +42,50 @@
 
     <!-- CUSTOM STYLE -->
     <link href="stylesheets/style.css" id="switch_style" rel="stylesheet">
-    <script src='javascript/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Send Email Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_CZw4oXXZfKUQ8rjgwd8ga');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() { 
+            const btnkirim = document.querySelector('#submit');
+            const btnLoading = document.querySelector('#myBtn');
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                btnkirim.classList.toggle('d-none');
+                btnLoading.classList.toggle('d-none');
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_2u6ux1m', 'template_tr9c9kg', this)
+                    .then(function() {
+                        btnkirim.classList.toggle('d-none')
+                        btnLoading.classList.toggle('d-none')
+                            Swal.fire(
+                                'Contactnya Berhasil Dikirim Ke Email Kami',
+                                'Terima Kasih Atas Tanggapannya :)',
+                                'success'
+                            )
+                            form.reset();
+                    }, function(error) {
+                            btnkirim.classList.toggle('d-none')
+                            btnLoading.classList.toggle('d-none')
+                            Swal.fire(
+                                'Contactnya Berhasil Dikirim Ke Email Kami',
+                                'Terima Kasih Atas Tanggapannya :)',
+                                'success'
+                            )
+                    });
+            });
+        }
+    </script>
+    <!-- Akhir Send Email Script -->
 
 <audio src="audios/Bejana-Mu_-_JPCC___Cover_by_NY7__Nadia___Yoseph_(256k).ogg" allows autoplay></audio>
 </head>
@@ -1297,32 +1339,32 @@
                 <!-- CONTACT FORM -->
                 <div class="card">
                     <div class="card-content">
-                        <form id="contact-form" name="aristoteles-Contact-Forms">
+                        <form id="contact-form">
+                            <input type="hidden" name="contact_number">
                             <!-- NAME -->
                             <div class="input-field">
-                                <input id="first_name" type="text" class="validate" name="Name" required>
                                 <label for="first_name">Name</label>
+                                <input id="first_name" class="validate" type="text" name="user_name" required>
                             </div>
                             <!--SUBJECT-->
                             <div class="input-field">
-                                <input id="sub" type="text" class="validate" name="Subject">
+                                <input id="sub" type="text" class="validate" name="subject">
                                 <label for="sub">Subject</label>
                             </div>
                             <!--EMAIL-->
                             <div class="input-field">
-                                <input id="email" type="email" class="validate" name="Email" required>
                                 <label for="email">Email</label>
+                                <input id="email" class="validate" type="email" name="user_email" required>
                             </div>
                             <!--MESSAGE-->
                             <div class="input-field">
-                                <textarea id="textarea1" class="materialize-textarea" name="Message"
-                                            required></textarea>
                                 <label for="textarea1">Message</label>
+                                <textarea id="textarea1" class="materialize-textarea" name="message" required></textarea>
                             </div>
                             <!-- SEND BUTTON -->
                             <div class="contact-send">
-                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
-                                        class="btn waves-effect">Send
+                                <button id="submit" name="contactSubmit" type="submit" value="Send"
+                                        class="btn waves-effect ">Send
                                 </button>
                                 </div>
                             </form>
@@ -1333,40 +1375,6 @@
                 </div>
             </div>
                 <!-- Form Script -->
-                <script>
-                    const scriptURL = 'https://script.google.com/macros/s/AKfycbzg9ycz6Lxs84vzkE1ca01mzRaxBd2nY0yVpQ7YN92zs_DaOI78u6IOo3azSAoS9k_T/exec'
-                    const form = document.forms['aristoteles-Contact-Forms']
-                    const btnkirim = document.querySelector('#submit');
-                    const btnLoading = document.querySelector('#myBtn');
-                
-                    form.addEventListener('submit', e => {
-                        e.preventDefault();
-                        
-                        btnkirim.classList.toggle('d-none')
-                        btnLoading.classList.toggle('d-none')
-                        
-                        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                        .then(response => {
-                            btnkirim.classList.toggle('d-none')
-                            btnLoading.classList.toggle('d-none')
-                            Swal.fire(
-                                'Tanggapan Berhasil Dikirim',
-                                'Terima Kasih Atas Tanggapannya :)',
-                                'success'
-                            )
-                            form.reset();
-                        })
-                        .catch(error => {
-                            btnkirim.classList.toggle('d-none')
-                            btnLoading.classList.toggle('d-none')
-                            Swal.fire(
-                                'Tanggapan Berhasil Dikirim',
-                                'Terima Kasih Atas Tanggapannya :)',
-                                'success'
-                            )
-                        })
-                        })
-                    </script>
                 <!-- Akhir Form Script -->
 
 
